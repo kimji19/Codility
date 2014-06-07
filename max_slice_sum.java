@@ -28,8 +28,8 @@
 
 int maxSliceSum(int[] A){
 
-    int sum=In, max=0;
-    for(int i=0; i<A.length; i++){
+    int sum=A[0], max=A[0];
+    for(int i=1; i<A.length; i++){
         sum+=A[i];
         if(sum<A[i]) sum=A[i];
         if(sum>max) max=sum;
